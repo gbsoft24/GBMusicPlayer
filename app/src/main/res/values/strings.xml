@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GB Music Player</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="prev_button">Previous</string>
+    <string name="play_button">Play</string>
+    <string name="pause_button">Pause</string>
+    <string name="next_button">Next</string>
+    <string name="menu_shuffle">Shuffle</string>
+    <string name="menu_repeat">Repeat</string>
+    <string name="menu_about_me">About Me</string>
+</resources>

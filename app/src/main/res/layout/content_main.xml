@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gbsoft.gbmusicplayer.ui.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/colorCustom">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="164dp" />
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="102dp"
+        android:onClick="onPrevClick"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/songTitleTextColor"
+        android:text="@string/prev_button" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnPrev"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPlayClick"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/songTitleTextColor"
+        android:text="@string/play_button" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlay"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onNextClick"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/songTitleTextColor"
+        android:text="@string/next_button" />
+
+    <SeekBar
+        android:id="@+id/skBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:ellipsize="marquee"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/songTitleTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
