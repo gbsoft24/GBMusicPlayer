@@ -16,7 +16,7 @@ import com.gbsoft.gbmusicplayer.ui.MainActivity;
 
 import java.util.List;
 /*
- * Created by Ravi Lal Pandey on 15/02/2017.
+ * Created by Chiranjeevi Pandey on 15/02/2017.
  */
 
 public class SongsRecyclerViewAdapter extends RecyclerView.Adapter<SongsRecyclerViewAdapter.MyViewHolder> {

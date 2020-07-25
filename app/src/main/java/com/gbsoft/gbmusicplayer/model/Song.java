@@ -1,7 +1,7 @@
 package com.gbsoft.gbmusicplayer.model;
 
 /*
- * Created by Ravi Lal Pandey on 15/02/2017.
+ * Created by Chiranjeevi Pandey on 15/02/2017.
  */
 
 import android.net.Uri;
